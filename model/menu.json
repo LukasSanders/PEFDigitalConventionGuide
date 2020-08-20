@@ -1,0 +1,79 @@
+{
+	"food": [
+                {
+                    "name": "Hay Burger", 
+                    "description": "Burger with hay and flowers.", 
+                    "picurl": "./images/test-image-food-1.jpg",
+                    "allergics": "Hay",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }, 
+
+                {
+                    "name": "Flower Sandwich", 
+                    "description": "Sandwich with hay and flowers.", 
+                    "picurl": "./images/test-image-food-2.jpg",
+                    "allergics": "Hay",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }, 
+            
+                {
+                    "name": "Oatmeal", 
+                    "description": "Oatmeal (oats with meal).", 
+                    "picurl": "./images/test-image-food-3.jpg",
+                    "allergics": "Oats",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }
+            ],
+
+    "snacks": [
+                {
+                    "name": "Muffin", 
+                    "description": "Chocolate chip, raspberry or banana", 
+                    "picurl": "./images/test-image-snacks-1.jpg",
+                    "allergics": "1, 5, 9",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }, 
+
+                {
+                    "name": "Cookies", 
+                    "description": "Chocolate chip or Double Chocolate.", 
+                    "picurl": "./images/test-image-snacks-2.jpg",
+                    "allergics": "5, 7",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }
+            ],
+
+        "drinks": [
+                {
+                    "name": "Coffee", 
+                    "description": "Water with instant coffee powder.", 
+                    "picurl": "./images/test-image-drinks-1.jpg",
+                    "allergics": "none",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }, 
+
+                {
+                    "name": "Water", 
+                    "description": "Water.", 
+                    "picurl": "./images/test-image-drinks-2.jpg",
+                    "allergics": "none",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }, 
+            
+                {
+                    "name": "Milk", 
+                    "description": "Oatmeal (oats with meal).", 
+                    "picurl": "./images/test-image-drinks-3.jpg",
+                    "allergics": "Lactose",
+                    "price": "1.00", 
+                    "currcode": "EUR"
+                }
+            ]
+}

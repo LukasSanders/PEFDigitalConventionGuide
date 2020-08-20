@@ -1,0 +1,27 @@
+{
+	"merchandise": [
+                {
+                    "name": "Poster", 
+                    "description": "GalaCon 2021", 
+                    "picurl": "./images/test-image-merch-1.png",
+                    "price": "10.00", 
+                    "currcode": "EUR"
+                }, 
+
+                {
+                    "name": "T-Shirt", 
+                    "description": "GalaCon 2021", 
+                    "picurl": "./images/test-image-merch-2.jpg",
+                    "price": "15.00", 
+                    "currcode": "EUR"
+                }, 
+            
+                {
+                    "name": "Mug", 
+                    "description": "GalaCon 2021", 
+                    "picurl": "./images/test-image-merch-3.jpg",
+                    "price": "20.00", 
+                    "currcode": "EUR"
+                }
+            ]
+}

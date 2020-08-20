@@ -1,0 +1,52 @@
+﻿Bezeichnung;Gruppe;Zusatzbeschreibung;Icon;Breitengrad;Längengrad;Webseite;Polygon;Polygon-Koordinaten ;Polygon-Farbe;Linkname
+Deutsche Bank ;atm;Cash Group & Visa ;atmIcon;48.89275;9.1858;;;;;
+Postbank;atm;Cash Group & Visa - Post Office ;atmIcon;48.89663;9.18797;;;;;
+BW-Bank;atm;;atmIcon;48.89631;9.19017;;;;;
+Sparkasse;atm;;atmIcon;48.8942;9.18713;;;;;
+Volksbank;atm;;atmIcon;48.89631;9.18881;;;;;
+Ratskeller;food;Swabian Restaurant ;fodIcon;48.89591;9.19097;https://www.ratskeller-ludwigsburg.de/;;;;visit website
+Towers Pub;food;Irish Pub ;barIcon;48.89692;9.19217;https://towerspub.com/;;;;visit website
+Rossknecht;food;Swabian Restaurant ;fodIcon;48.89915;9.18879;https://rossknecht-lb.de/;;;;visit website
+Brauhaus;food;Swabian Restaurant ;fodIcon;48.89149;9.18733;https://rossknecht-sudhaus.de/;;;;visit website
+Sam Kullmans Diner ;food;American Diner ;fodIcon;48.8922942;9.1834815;https://kullmans-bestellung.de/ludwigsburg/;;;;visit website
+McDonalds;food;;fodIcon;48.89594;9.18973;http://www.mcdonalds-stuttgart.de/index.php?id=10;;;;visit website
+Subway;food;30 % off for GalaCon visitors  ;fodIcon;48.89596;9.19026;https://www.subway.com/de-DE;;;;visit website
+Blaue Agave;food;Mexican Restaurant  ;fodIcon;48.8929487;9.1825318;https://www.blaue-agave.de/;;;;visit website
+Jambo;food;African Restaurant ;fodIcon;48.895876;9.2002129;http://www.jamborestaurant.de/;;;;visit website
+Il Boccone;food;Italian Restaurant ;fodIcon;48.897967;9.1879499;http://www.ilboccone-lb.de/;;;;visit website
+Joe Penas Cantina ;food;Mexican Restaurant  ;fodIcon;48.8933529;9.1912974;https://www.joe-penas-ludwigsburg.com/;;;;visit website
+Deniz Imbiss;food;Turkish Restaurant ;fodIcon;48.89322;9.18686;;;;;
+Wok-In ;food;Asian Food ;fodIcon;48.8933;9.18694;;;;;
+Ygrec;food;Greek Restaurant ;fodIcon;48.8940674;9.187653;https://www.ygrec.de/;;;;visit website
+Soulas;food;Greek Restaurant ;fodIcon;48.891384;9.1912295;https://soulas-ludwigsburg.de/;;;;visit website
+Hospital;general;Call 112 for emergency ;resIcon;48.8980666;9.2012575;;;;;
+Police;general;Call 112 for emergency ;polIcon;48.8924273;9.191837;;;;;
+GalaCon Venue ;general;Forum am Schlosspark ;galIcon;48.89283;9.19509;https://www.galacon.eu/;;;;visit website
+Blühendes Barock ;general;Public Garden ;plaIcon;48.89657;9.19617;https://www.blueba.de/de/;;;;visit website
+Schloss Ludwigsburg ;general;Castle ;plaIcon;48.90012;9.19526;https://www.schloss-ludwigsburg.de/start;;;;visit website
+Schloss Favorite ;general;Castle ;plaIcon;48.9044;9.1957;https://www.schloss-favorite-ludwigsburg.de/start;;;;visit website
+Schloss Monrepos;general;Castle, Park & Lake ;plaIcon;48.9196;9.1695;https://www.ludwigsburg.de/start/tourismus/Seeschloss+Monrepos.html;;;;visit website
+Wilhelmgalerie;shopping;Mall ;shoIcon;48.89685;9.1883;https://wilhelm-galerie.com/;;;;visit website
+Müller;shopping;Drug Store & General Store ;shoIcon;48.89632;9.18794;;;;;
+Marstall-Center ;shopping;Mall ;shoIcon;48.89959;9.19088;https://www.marstall-ludwigsburg.de/;;;;visit website
+Fantasy Stronghold;shopping;Fantasy & Tabletop ;shoIcon;48.8972880;9.1900599;https://www.fantasystronghold.de/;;;;visit website
+dm;shopping;Drug Store ;shoIcon;48.89214;9.18578;;;;;
+Bahnhof-Apotheke;shopping;Pharmacy ;phaIcon;48.89249;9.18617;;;;;
+Mylius-Apotheke;shopping;Pharmacy ;phaIcon;48.89398;9.18765;;;;;
+Zeppelin-Apotheke;shopping;Pharmacy ;phaIcon;48.89402;9.18721;;;;;
+Gesundhaus-Apotheke;shopping;Pharmacy ;phaIcon;48.89632;9.18846;;;;;
+Zentral-Apotheke;shopping;Pharmacy ;phaIcon;48.8968963;9.1917644;;;;;
+REWE;shopping;General Store ;shoIcon;48.8971;9.18783;;;;;
+Bäckerei Katz;shopping;Bakery;shoIcon;48.89225;9.18392;;;;;
+Yormas;shopping;Bakery and Snacks ;shoIcon;48.89242;9.18556;;;;;
+Luckscheiter;shopping;Bakery ;shoIcon;48.8963;9.18996;;;;;
+Kaufland;shopping;General Store, Mall ;shoIcon;48.88866;9.20991;;;;;
+Kaufland;shopping;General Store, Mall ;shoIcon;48.89088;9.16923;;;;;
+Bus Terminal;transport;;traIcon;48.89141;9.18667;;;;;check departures 
+Ludwigsburg Station ;transport;;trnIcon;48.89242;9.18556;https://www.vvs.de/services/efaaufhp/widgets/a-nach-b.html?startId=de%3A08118%3A7402&start=Ludwigsburg%2C%20Ludwigsburg&type=train;;;;check departures 
+Favoritepark Station ;transport;;trnIcon;48.9097;9.1809;https://www.vvs.de/services/efaaufhp/widgets/a-nach-b.html?startId=de%3A08118%3A7403&start=Eglosheim%2C%20Favoritepark&type=train;;;;check departures 
+Scheune;general;Main Stage;;51.64057;9.6411;;X;51.64049,9.64078,51.6404,9.6409,51.64065,9.64143,51.64076,9.64132;#FA5882;see events 
+Zeltwiese;general;Camping Ground ;;51.64068;9.64251;;X;51.64088,9.64128,51.64051,9.64241,51.64008,9.64328,51.64049,9.64397,51.64086,9.64361,51.64126,9.64174;#FE9A2E;see events 
+Toiletten & Duschen ;general;Camping Bathrooms ;;51.64037;9.64203;;X;51.64056,9.64219,51.6405,9.64243,51.64024,9.64195,51.64033,9.64175;#BE81F7;
+Matratzenlager & Panels ;general;Mattress Camp & Panels ;;51.63967;9.64075;;X;51.63965,9.64055,51.63957,9.64066,51.63975,9.64105,51.63983,9.64094;;
+Jugendherberge;general;Youth Hostel ;plaIcon;51.66573;9.63102;;;;;

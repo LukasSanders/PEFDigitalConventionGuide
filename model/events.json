@@ -1,0 +1,192 @@
+{
+	"events": [
+		{
+            "eventId": 0,
+			"eventname": "Sample Show",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Panel Room I",
+            "begin": "2021-08-23T12:00:00",
+            "end": "2021-08-23T12:30:00",
+            "guestids": "#0# #1#",
+            "guests": [
+                {
+                    "guestId": 0,
+                    "guestname": "Linda Prince", 
+                    "guestteam": "Awesome Team", 
+                    "guestdescr": "Sample Text",
+                    "guestpicurl": "./images/test-image-woman-1.jpg"
+                }, 
+                {
+                    "guestId": 1,
+                    "guestname": "Mary Rose", 
+                    "guestteam": "Awesome Team", 
+                    "guestdescr": "Sample Text",
+                    "guestpicurl": "./images/test-image-woman-2.jpg"
+                } 
+            ]
+		},
+		{
+            "eventId": 1,
+			"eventname": "Sample Panel 1",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Panel Room II",
+            "begin": "2020-05-18T16:58:08",
+            "end": "2020-05-18T17:28:08",
+            "guestids": "#2# #3#",
+            "guests": [
+                {
+                    "guestId": 2,
+                    "guestname": "John Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                }, 
+                {
+                    "guestId": 3,
+                    "guestname": "Jenny Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                } 
+            ]
+		},
+		{
+            "eventId": 2,
+			"eventname": "Sample Panel 2",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Workshop Room",
+            "begin": "2020-05-16T21:50:00",
+            "end": "2020-05-16T22:20:00",
+            "guestids": "#2# #3#",
+            "guests": [
+                {
+                    "guestId": 2,
+                    "guestname": "John Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                }, 
+                {
+                    "guestId": 3,
+                    "guestname": "Jenny Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                } 
+            ]
+		},
+		{
+            "eventId": 3,
+			"eventname": "Sample Panel 3",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Panel Room II",
+            "begin": "2020-05-16T12:00:00",
+            "end": "2020-05-16T12:30:00",
+            "guestids": "#4# #5#",
+            "guests": [
+                {
+                    "guestId": 4,
+                    "guestname": "Jeremy White", 
+                    "guestteam": "Sample Team", 
+                    "guestdescr": "Sample Text"
+                }, 
+                {
+                    "guestId": 5,
+                    "guestname": "Michael Johnson", 
+                    "guestteam": "Sample Team", 
+                    "guestdescr": "Sample Text"
+                } 
+            ]
+        },
+
+        {
+            "eventId": 15,
+			"eventname": "Sample Panel 15",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Panel Room II",
+            "begin": "2020-08-23T12:00:00",
+            "end": "2020-08-23T12:30:00",
+            "guestids": "#2# #3#",
+            "guests": [
+                {
+                    "guestId": 2,
+                    "guestname": "John Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                }, 
+                {
+                    "guestId": 3,
+                    "guestname": "Jenny Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                } 
+            ]
+        },
+        {
+            "eventId": 9,
+			"eventname": "Workshop",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Workshop Room",
+            "begin": "2020-05-14T16:00:00",
+            "end": "2020-05-14T16:30:00",
+            "guestids": "#4#",
+            "guests": [
+                {
+                    "guestId": 4,
+                    "guestname": "Jeremy White", 
+                    "guestteam": "Sample Team", 
+                    "guestdescr": "Sample Text"
+                }
+            ]
+        },
+        {
+            "eventId": 8,
+			"eventname": "Really Important Panel",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Main Hall",
+            "begin": "2020-05-20T22:00:00",
+            "end": "2020-05-20T22:30:00",
+            "guestids": "#5#",
+            "guests": [
+                {
+                    "guestId": 5,
+                    "guestname": "Michael Johnson", 
+                    "guestteam": "Sample Team", 
+                    "guestdescr": "Sample Text"
+                } 
+            ]
+        },
+        {
+            "eventId": 10,
+			"eventname": "Sample Show",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Main Hall",
+            "begin": "2021-08-23T12:00:00",
+            "end": "2021-08-23T12:30:00",
+            "guestids": "#1#",
+            "guests": [
+                {
+                    "guestId": 1,
+                    "guestname": "Mary Rose", 
+                    "guestteam": "Awesome Team", 
+                    "guestdescr": "Sample Text",
+                    "guestpicurl": "./images/test-image-woman-2.jpg"
+                } 
+            ]
+        },
+        {
+            "eventId": 20,
+			"eventname": "Sample Music Set",
+			"description": "Lorem ipsum dolor sit amet",
+            "room": "Party Hall",
+            "begin": "2021-08-23T12:00:00",
+            "end": "2021-08-23T12:30:00",
+            "guestids": "#0#",
+            "guests": [
+                {
+                    "guestId": 0,
+                    "guestname": "Linda Prince", 
+                    "guestteam": "Awesome Team", 
+                    "guestdescr": "Sample Text",
+                    "guestpicurl": "./images/test-image-woman-1.jpg"
+                }
+            ]
+		}
+	]
+}

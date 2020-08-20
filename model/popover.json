@@ -1,0 +1,94 @@
+{
+	"items": [
+		{
+			"src": "sap-icon://home",
+			"title": "Home",
+			"subTitle": "Start Page",
+			"target": "overview",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://map-3",
+			"title": "Venue Map",
+			"target": "map",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://map-2",
+			"title": "City Map",
+			"subTitle": "Explore Ludwigsburg",
+			"target": "explore",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://date-time",
+			"title": "Event Schedule",
+			"target": "events",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://employee",
+			"title": "Guests and Panelists",
+			"target": "guests",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://activity-individual",
+			"title": "My Event Schedule",
+			"target": "myevents",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://jam",
+			"title": "Follow & Interact",
+			"subTitle": "Social Media & Contact",
+			"target": "social",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://meal",
+			"title": "Restaurant",
+			"subTitle": "KUBUS Menu",
+			"target": "restaurant",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://cart",
+			"title": "Shop",
+			"subTitle": "Merchandise Offers",
+			"target": "shop",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://retail-store",
+			"title": "Vendors",
+			"target": "vendors",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://passenger-train",
+			"title": "Public Transport",
+			"target": "transport",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://user-settings",
+			"title": "My User Settings",
+			"target": "user",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://hint",
+			"title": "General Information",
+			"target": "general",
+			"targetSrc": "App"
+		},
+		{
+			"src": "sap-icon://documents",
+			"title": "About",
+			"subTitle": "Privacy, Legal, Author",
+			"target": "about",
+			"targetSrc": "App"
+		}
+	]
+}

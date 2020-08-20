@@ -1,0 +1,51 @@
+{
+	"guests": [
+                {
+                    "guestId": 0,
+                    "guestname": "Linda Prince", 
+                    "guestteam": "Awesome Team", 
+                    "guestdescr": "Sample Text",
+                    "guestpicurl": "./images/test-image-woman-1.jpg",
+                    "guestlongtext": "This is a longer text which can be used as a description to add further information to the detail page.",
+                    "guestlink": "www.google.de"
+                }, 
+
+                {
+                    "guestId": 1,
+                    "guestname": "Mary Rose", 
+                    "guestteam": "Awesome Team", 
+                    "guestdescr": "Sample Text",
+                    "guestpicurl": "./images/test-image-woman-2.jpg",
+                    "guestlongtext": "This is a longer text which can be used as a description to add further information to the detail page.",
+                    "guestlink": "www.yahoo.com"
+                }, 
+            
+                {
+                    "guestId": 2,
+                    "guestname": "John Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                }, 
+
+                {
+                    "guestId": 3,
+                    "guestname": "Jenny Doe", 
+                    "guestteam": "Guest of Honor", 
+                    "guestdescr": "Sample Text"
+                }, 
+
+                {
+                    "guestId": 4,
+                    "guestname": "Jeremy White", 
+                    "guestteam": "Sample Team", 
+                    "guestdescr": "Sample Text"
+                }, 
+
+                {
+                    "guestId": 5,
+                    "guestname": "Michael Johnson", 
+                    "guestteam": "Sample Team", 
+                    "guestdescr": "Sample Text"
+                } 
+            ]
+}

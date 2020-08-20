@@ -1,0 +1,66 @@
+{
+	"vendors": [
+                {
+                    "vendorId": 0,
+                    "name": "Awesome Plushies", 
+                    "products": "Plushies, Pillows", 
+                    "description": "We make nice plushies, pillows and ",
+                    "stall": "0.15",
+                    "stallLatLng": [496, 786],
+                    "vendorimg": "./images/test-image-vendor.jpeg",
+                    "vendorUrl": "www.google.de"
+                },
+                {
+                    "vendorId": 1,
+                    "name": "Pony Prints", 
+                    "products": "Prints, Posters", 
+                    "description": "Sample Text",
+                    "stall": "1.25",
+                    "stallLatLng": [496, 786],
+                    "vendorimg": "./images/test-image-vendor.jpeg",
+                    "vendorUrl": "www.google.de"
+                },
+                {
+                    "vendorId": 2,
+                    "name": "Laser Tech", 
+                    "products": "Engraved tags, Badges, Light art", 
+                    "description": "Sample Text",
+                    "stall": "0.55",
+                    "stallLatLng": [496, 786],
+                    "vendorimg": "./images/test-image-vendor.jpeg",
+                    "vendorUrl": "www.google.de"
+                },
+                {
+                    "vendorId": 3,
+                    "name": "Sweet Drawings", 
+                    "products": "Plushies, ", 
+                    "description": "Sample Text",
+                    "stall": "1.05",
+                    "stallLatLng": [496, 786],
+                    "commissions": true,
+                    "vendorimg": "./images/test-image-vendor.jpeg",
+                    "vendorUrl": "www.google.de"
+                },
+                {
+                    "vendorId": 4,
+                    "name": "Merchant", 
+                    "products": "Merchandise, Figurines, Customs", 
+                    "description": "Sample Text",
+                    "stall": "0.05",
+                    "stallLatLng": [496, 786],
+                    "vendorimg": "./images/test-image-vendor.jpeg",
+                    "vendorUrl": "www.google.de"
+                },
+                {
+                    "vendorId": 5,
+                    "name": "Comic Shop", 
+                    "products": "Comics, Arts, Sketches, Colored sketches", 
+                    "description": "Sample Text",
+                    "stall": "1.20",
+                    "stallLatLng": [496, 786],
+                    "commissions": true,
+                    "vendorimg": "./images/test-image-vendor.jpeg",
+                    "vendorUrl": "www.google.de"
+                }
+            ]
+}

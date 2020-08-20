@@ -1,0 +1,14 @@
+{
+    "name": "Doe",
+    "firstname": "John",
+    "initials": "JD",
+    "consent": false,
+    "favevents": [
+        {
+            "eventid": 2
+        }, 
+        {
+            "eventid": 3
+        } 
+    ]
+}
