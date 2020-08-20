@@ -1,0 +1,60 @@
+<mvc:View	controllerName="pef.Philomena.controller.GuestDetail"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:tnt="sap.tnt"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+	<f:DynamicPage id="dynamicPageId">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="{guests>guestname}" />
+				</f:heading>
+				<f:expandedContent>
+					<Link	text="Visit website"
+							target="_blank"
+							href="{guests>guestlink}" />
+					<Text text="{guests>guestteam}"/>
+				</f:expandedContent>
+				<f:snappedContent>
+					<Text text="{guests>guestteam}"/>
+				</f:snappedContent>
+				<f:actions>
+					<Button
+						icon="sap-icon://employee-lookup"
+						text="Show events"
+						type="Emphasized"
+						press="onShowEvents" >
+						<customData>
+							<core:CustomData key="guestId" value="{guests>guestId}"/>
+						</customData>
+					</Button>
+				</f:actions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<FlexBox alignItems="Start" justifyContent="SpaceBetween">
+					<Panel backgroundDesign="Transparent" class="sapUiNoContentPadding">
+						<layout:HorizontalLayout allowWrapping="true">
+							<layout:VerticalLayout class="sapUiMediumMarginEnd">
+								<ObjectAttribute text="{guests>team}" />
+							</layout:VerticalLayout>
+						</layout:HorizontalLayout>
+					</Panel>
+				</FlexBox>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<layout:VerticalLayout>
+				<Text text="{guests>guestdescr}" />
+				<Text text="{guests>guestlongtext}" />
+			</layout:VerticalLayout>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

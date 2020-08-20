@@ -1,0 +1,215 @@
+{
+	"sap.app": {
+		"id": "pef.Philomena",
+		"type": "application", 
+		"applicationVersion": {
+			"version": "1.0.0"
+		}
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "pef.Philomena.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"libs": {
+				"sap.f": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"config": {
+			"sample": {
+				"stretch": true,
+				"files": [
+					"view/Popover.fragment.xml",
+					"view/App.view.xml",
+					"controller/App.controller.js",
+					"model/popover.json",
+					"manifest.json"
+				]
+			}
+		},
+		"routing": {
+
+			"config": {
+				"routerClass": 			"sap.m.routing.Router",
+				"viewType": 			"XML",
+				"viewPath": 			"pef.Philomena.view", 
+				"controlId":			"app",
+				"controlAggregation": 	"pages",
+				"transition": 			"slide",
+				"bypassed": 			{"target": "notFound"}
+			},
+
+			"routes": [
+				{
+					"pattern": 	"", 
+					"name": 	"overview", 
+					"target": 	"overview"
+				},
+				{
+					"pattern": 	"map", 
+					"name": 	"map", 
+					"target": 	"map"
+				},
+				{
+					"pattern": 	"maplocation/{location}", 
+					"name": 	"maplocation", 
+					"target": 	"map"
+				},
+				{
+					"pattern": 	"eventswithguest/{guestId}", 
+					"name": 	"eventswithguest", 
+					"target": 	"events"
+				},
+				{
+					"pattern": 	"eventsinroom/{roomName}", 
+					"name": 	"eventsinroom", 
+					"target": 	"events"
+				},
+				{
+					"pattern": 	"events", 
+					"name": 	"events", 
+					"target": 	"events"
+				},
+				{
+					"pattern": 	"eventdetail/{eventId}", 
+					"name": 	"eventdetail", 
+					"target": 	"eventdetail"
+				},
+				{
+					"pattern": 	"explore", 
+					"name": 	"explore", 
+					"target": 	"explore"
+				},
+				{
+					"pattern": 	"guests", 
+					"name": 	"guests", 
+					"target": 	"guests"
+				},
+				{
+					"pattern": 	"guestdetail/{guestId}", 
+					"name": 	"guestdetail", 
+					"target": 	"guestdetail"
+				},
+				{
+					"pattern": 	"about", 
+					"name": 	"about", 
+					"target": 	"about"
+				},
+				{
+					"pattern": 	"user", 
+					"name": 	"user", 
+					"target": 	"user"
+				},
+				{
+					"pattern": 	"myevents", 
+					"name": 	"myevents", 
+					"target": 	"myevents"
+				},
+				{
+					"pattern": 	"restaurant", 
+					"name": 	"restaurant", 
+					"target": 	"restaurant"
+				},
+				{
+					"pattern": 	"shop", 
+					"name": 	"shop", 
+					"target": 	"shop"
+				},
+				{
+					"pattern":  "vendors",
+					"name": 	"vendors",
+					"target": 	"vendors"
+				},
+				{
+					"pattern": 	"general", 
+					"name": 	"general", 
+					"target": 	"general"
+				},
+				{
+					"pattern": 	"social", 
+					"name": 	"social", 
+					"target": 	"social"
+				},
+				{
+					"pattern": 	"transport", 
+					"name": 	"transport", 
+					"target": 	"transport"
+				}
+			],
+
+			"targets": {
+				"notFound": {
+					"viewName": 	"NotFound", 
+					"viewLevel": 	1
+				},
+				"overview": {
+					"viewName": 	"Overview", 
+					"viewLevel": 	1
+				},
+				"map": {
+					"viewName": 	"Map", 
+					"viewLevel": 	1
+				},
+				"events": {
+					"viewName": 	"Events", 
+					"viewLevel": 	1
+				},
+				"guestdetail": {
+					"viewName": 	"GuestDetail", 
+					"viewLevel": 	2
+				},
+				"myevents": {
+						"viewName": "Events", 
+						"viewLevel": 1
+				},
+				"explore": {
+					"viewName": 	"Explore", 
+					"viewLevel": 	1
+				},
+				"guests": {
+					"viewName": 	"Guests", 
+					"viewLevel": 	1
+				},
+				"eventdetail": {
+					"viewName": 	"EventDetail", 
+					"viewLevel": 	2
+				},
+				"about": {
+						"viewName": "About", 
+						"viewLevel": 1
+					},
+				"user": {
+						"viewName": "User", 
+						"viewLevel": 1
+					},
+				"restaurant": {
+						"viewName": "Restaurant", 
+						"viewLevel": 1
+					},
+				"social": {
+						"viewName": "Social", 
+						"viewLevel": 1
+					},
+				"shop": {
+						"viewName": "Shop", 
+						"viewLevel": 1
+					},
+				"vendors": {
+						"viewName": "Vendors",
+						"viewLevel": 1
+				},
+				"general": {
+						"viewName": "General", 
+						"viewLevel": 1
+					},
+				"transport": {
+						"viewName": "Transport", 
+						"viewLevel": 1
+					}
+				}
+			}
+		}
+	}

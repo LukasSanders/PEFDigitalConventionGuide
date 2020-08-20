@@ -1,0 +1,77 @@
+<mvc:View controllerName="pef.Philomena.controller.Shop"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	height="100%">
+
+	<ObjectPageLayout id="ObjectPageLayout" showAnchorBarPopover="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<heading>
+					<m:Title text="Merchandise Shop"/>
+				</heading>
+
+				<snappedTitleOnMobile>
+					<m:Title text="Merchandise Shop" />
+				</snappedTitleOnMobile>
+
+				<actions>
+					<m:OverflowToolbarButton icon="sap-icon://map-3" type="Emphasized" tooltip="switch to map" press="onToMap"/>
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:Title text="Please see our convention map for the shop location." titleStyle="H6"/>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection title="Menu">
+                <subSections>
+					<ObjectPageSubSection title="GalaCon Merchandise">
+						<blocks>
+                            <m:List id="foodList"
+                                items="{shop>/merchandise}" >
+
+                                <m:StandardListItem
+                                            title="{shop>name}"
+                                            description="{shop>description}"
+                                            icon="{shop>picurl}"
+                                            iconDensityAware="false"
+                                            iconInset="false"
+                                            info="{shop>price} {shop>currcode}" />
+                            
+                            </m:List>
+                        </blocks>
+			        </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+
+        <ObjectPageSection title="Information">
+            <subSections>
+                <ObjectPageSubSection title="Availability and prices">
+                    <blocks>
+                        <m:Text text="Some products may be sold out early. Leftover goodies will not be sold before Sunday noon. Prices are subject to change; please see price tags at the shop." />
+                    </blocks>
+                </ObjectPageSubSection>
+                <ObjectPageSubSection title="Payment methods">
+                    <blocks>
+                        <m:Text text="We accept cash, card payments and Apple or Google pay." />
+                    </blocks>
+                </ObjectPageSubSection>
+                <ObjectPageSubSection title="VAT">
+                    <blocks>
+                        <m:Text text="All prices include 19 percent German VAT. Resellers or companies can ask for a qualified receipt at the shop." />
+                    </blocks>
+                </ObjectPageSubSection>
+                <ObjectPageSubSection title="Receipts">
+                    <blocks>
+                        <m:Text text="We are obliged to hand out a receipt for every purchase. The receipt can also be delivered via e-mail upon request." />
+                    </blocks>
+                </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+		</sections>
+
+	</ObjectPageLayout>
+</mvc:View>

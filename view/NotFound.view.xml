@@ -1,0 +1,11 @@
+<mvc:View	controllerName="pef.Philomena.controller.NotFound"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:m="sap.m">
+
+	<m:MessagePage  title="Page not found" 
+                    text="Sorry, but the content is currently not available." 
+                    description="Please try again. If the error persists, please report this error to webmaster@pony-events.eu." 
+                    showNavButton="true" 
+                    navButtonPress="onNavBack" />
+                    
+</mvc:View>

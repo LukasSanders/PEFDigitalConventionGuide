@@ -1,0 +1,116 @@
+<mvc:View controllerName="pef.Philomena.controller.General"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	height="100%">
+	<ObjectPageLayout id="ObjectPageLayout" showAnchorBarPopover="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<heading>
+					<m:Title text="General information"/>
+				</heading>
+
+				<snappedTitleOnMobile>
+					<m:Title text="General information" />
+				</snappedTitleOnMobile>
+
+				<actions>
+					<!--<m:OverflowToolbarButton icon="sap-icon://pull-down" text="show section" type="Emphasized" tooltip="pull-down"/>
+					<m:OverflowToolbarButton icon="sap-icon://show" text="show state" type="Emphasized" tooltip="show"/>-->
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:Title text="Here you can find general information about GalaCon, single events or services for specific groups." titleStyle="H6"/>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection title="PlushieCon">
+				<subSections>
+					<ObjectPageSubSection title="What is PlushieCon? ">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="How to take part">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+                    <ObjectPageSubSection title="Opening times">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+			<ObjectPageSection title="Fursuiters">
+				<subSections>
+					<ObjectPageSubSection title="Services">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Direct contact">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+            <ObjectPageSection title="Cosplay Contest">
+				<subSections>
+                    <ObjectPageSubSection title="What is it?">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+                    <ObjectPageSubSection title="How to take part">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Times and locations">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Direct contact">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+            <ObjectPageSection title="Gala Run and Scavenger Hunt">
+				<subSections>
+                    <ObjectPageSubSection title="What is it?">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+                    <ObjectPageSubSection title="How to take part">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Times and locations">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+					<ObjectPageSubSection title="Direct contact, App link">
+						<blocks>
+							<m:Text text="Sample text" />
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+
+	</ObjectPageLayout>
+</mvc:View>

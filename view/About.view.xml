@@ -1,0 +1,17 @@
+<mvc:View	controllerName="pef.Philomena.controller.About"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:l= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html">
+	
+	<VBox class="sapUiMediumMargin">
+		<FormattedText htmlText="{html>/HTML}"/>
+	</VBox>
+	
+		<OverflowToolbar id="otbFooter">
+			<Button id="btnWebsite" type="Default" icon="sap-icon://internet-browser" text="Visit website" press="onPress" />
+			<Button id="btnEmail" type="Default" icon="sap-icon://email" text="Send e-mail" press="onPress" />
+		</OverflowToolbar>
+</mvc:View>

@@ -1,0 +1,114 @@
+<mvc:View	controllerName="pef.Philomena.controller.EventDetail"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:tnt="sap.tnt"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+	<f:DynamicPage id="dynamicPageId">
+		<f:title>
+			<f:DynamicPageTitle>
+				<f:heading>
+					<Title text="{events>eventname}" />
+				</f:heading>
+				<f:expandedContent>
+					<tnt:InfoLabel text="{	path: 'events>begin', 
+											formatter: 'pef.Philomena.controller.Formatter.eventbeginstatus'}" 
+									colorScheme="{	path: 'events>begin', 
+													formatter: 'pef.Philomena.controller.Formatter.eventbegincolor'}"
+									icon="{	path: 'events>begin', 
+											formatter: 'pef.Philomena.controller.Formatter.eventbeginstatusicon'}"/>
+				</f:expandedContent>
+				<f:snappedContent>
+					<tnt:InfoLabel text="{	path: 'events>begin', 
+											formatter: 'pef.Philomena.controller.Formatter.eventbeginstatus'}" 
+									colorScheme="{	path: 'events>begin', 
+													formatter: 'pef.Philomena.controller.Formatter.eventbegincolor'}"
+									icon="{	path: 'events>begin', 
+											formatter: 'pef.Philomena.controller.Formatter.eventbeginstatusicon'}"/>
+				</f:snappedContent>
+				<f:actions>
+					<Button
+						icon="sap-icon://add-favorite"
+						type="Emphasized"
+						press="onMarkFavorite" >
+						<customData>
+							<core:CustomData key="eventId" value="{events>eventId}"/>
+						</customData>
+					</Button>
+					<Button 
+						icon="sap-icon://unfavorite" 
+						type="Transparent"
+						press="onUnmarkFavorite" >
+						<customData>
+							<core:CustomData key="eventId" value="{events>eventId}"/>
+						</customData>
+					</Button>
+					<Button 
+						icon="sap-icon://share-2" 
+						type="Transparent"
+						press="onShare" >
+						<customData>
+							<core:CustomData key="eventId" value="{events>eventId}"/>
+						</customData>
+					</Button>
+				</f:actions>
+			</f:DynamicPageTitle>
+		</f:title>
+		<f:header>
+			<f:DynamicPageHeader pinnable="true">
+				<FlexBox alignItems="Start" justifyContent="SpaceBetween">
+					<Panel backgroundDesign="Transparent" class="sapUiNoContentPadding">
+						<layout:HorizontalLayout allowWrapping="true">
+							<layout:VerticalLayout class="sapUiMediumMarginEnd">
+								<ObjectAttribute title="Room" text="{events>room}" />
+								<ObjectAttribute title="Starting" text="{ 	path: 'events>begin', 
+																			type: 'sap.ui.model.type.DateTime',
+																			formatOptions: { 
+																				source: { pattern: 'yyyy-MM-ddTHH:mm:ss' },
+																				pattern: 'HH:mm'
+																			}}" />
+								<ObjectAttribute title="Ending" text="{	path: 'events>end', 
+																		type: 'sap.ui.model.type.DateTime',
+																		formatOptions: { 
+																			source: { pattern: 'yyyy-MM-ddTHH:mm:ss' },
+																			pattern: 'HH:mm'
+																		}}" />
+								<ObjectAttribute text="{	path: 'events>begin', 
+															formatter: 'pef.Philomena.controller.Formatter.eventday'}" />
+							</layout:VerticalLayout>
+						</layout:HorizontalLayout>
+					</Panel>
+				</FlexBox>
+			</f:DynamicPageHeader>
+		</f:header>
+		<f:content>
+			<layout:VerticalLayout>
+				<Text text="{events>description}" />
+
+
+
+				
+				<List id="guestList"
+					headerText="Guests"
+					items="{events>guests}" >
+
+					<StandardListItem
+								title="{events>guestname}"
+								description="{events>guestteam}"
+								icon="{events>guestpicurl}"
+								iconDensityAware="false"
+								iconInset="false"
+								type="Active"
+								press="onPanelistPress"
+								detailPress="onPanelistPress" />
+				
+				</List>
+			</layout:VerticalLayout>
+		</f:content>
+	</f:DynamicPage>
+</mvc:View>

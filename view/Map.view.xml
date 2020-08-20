@@ -1,0 +1,28 @@
+<mvc:View	controllerName="pef.Philomena.controller.Map"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/xhtml"
+			height="100%"
+			displayBlock="true">
+			<VBox id="mapIFrame" class="sapUiMediumMargin"/>
+			<OverflowToolbar id="otbFooter">
+					<MenuButton text="Select room">
+						<menu>
+							<Menu itemSelected="onToggle">
+								<MenuItem text="All" icon="sap-icon://clear-filter" id="btnAll"/>
+								<MenuItem text="Service" id="btnService"/>
+								<MenuItem text="Event rooms" id="btnEvent" />
+								<MenuItem text="Food and Drinks" id="btnFood" />
+								<MenuItem text="Bathrooms" id="btnBath" />
+								<MenuItem text="Elevators" id="btnElev" />
+							</Menu>
+						</menu>
+					</MenuButton>
+				<Button id="btnClearFilter" icon="sap-icon://clear-filter" press="onClearFilter" />
+				<ToolbarSpacer/>
+				<Button id="btnExternal" type="Emphasized" icon="sap-icon://action" text="Open in browser" press="onViewExternal" />
+			</OverflowToolbar>
+</mvc:View>

@@ -1,0 +1,54 @@
+<mvc:View	controllerName="pef.Philomena.controller.Vendors"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+		<List id="vendorList" items="{path: 'vendors>/vendors', sorter: {path: 'stall'}}" headerText="Vendor List">
+			<headerToolbar>
+				<Toolbar>
+					<SearchField width="50%" search="onFilter"/>
+						<MenuButton text="Select category">
+							<menu>
+								<Menu itemSelected="onCategorySelected">
+								<MenuItem text="All" icon="sap-icon://clear-filter" />
+								<MenuItem text="Arts" />
+								<MenuItem text="Comics" />
+                                <MenuItem text="Prints" />
+                                <MenuItem text="Plushies" />
+                                <MenuItem text="Figurines" />
+                                <MenuItem text="Merchandise" />
+                                <MenuItem text="Guest vendor stalls" />
+							</Menu>
+						</menu>
+					</MenuButton>
+					<ToggleButton text="Commissions" enabled="true" pressed="false" press="onCommissionsOnly" />
+					<Button icon="sap-icon://clear-filter" press="onClearFilter" />
+				</Toolbar>
+			</headerToolbar>
+			<ObjectListItem title="{vendors>name}" 
+                            type="Active" 
+							press="onListItemPress">
+						<customData>
+							<core:CustomData key="vendorId" value="{vendors>vendorId}"/>
+							<core:CustomData key="vendorName" value="{vendors>name}"/>
+							<core:CustomData key="stallLatLng" value="{vendors>stallLatLng}"/>
+						</customData>
+
+					<firstStatus>
+						<ObjectStatus
+							text="{vendors>stall}"
+							state="Information"
+							icon="sap-icon://retail-store" />
+					</firstStatus>
+				
+					<ObjectAttribute text="{vendors>description}" />
+					<ObjectAttribute title="Products" text="{vendors>products}" />
+
+			</ObjectListItem>
+		</List>	
+</mvc:View>

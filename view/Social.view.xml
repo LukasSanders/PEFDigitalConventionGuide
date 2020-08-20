@@ -1,0 +1,64 @@
+<mvc:View	controllerName="pef.Philomena.controller.Social"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+        id="twitter"
+        header="Twitter"
+		subheader="@gala_con" press="onPress">
+		<TileContent>
+			<ImageContent src="./resources/twitter.png" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+        header="Facebook"
+        id="facebook"
+		subheader="GalaConEU" press="onPress">
+		<TileContent>
+			<ImageContent src="./resources/facebook.png" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+        header="YouTube"
+        id="youtube"
+		subheader="GalaCon" press="onPress">
+		<TileContent>
+			<ImageContent src="./resources/youtube.png" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+        id="email"
+        header="E-Mail"
+		subheader="support@pony-events.eu" press="onPress">
+		<TileContent>
+			<ImageContent src="./resources/email.png" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+        id="website"
+        header="Website"
+		subheader="galacon.eu" press="onPress">
+		<TileContent>
+			<ImageContent src="./resources/wordpress.png" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" 
+        id="sms"
+        header="Short Message"
+		subheader="+49 (0) 151 100 200 300" press="onPress">
+		<TileContent>
+			<ImageContent src="./resources/sms.png" />
+		</TileContent>
+	</GenericTile>
+</mvc:View>

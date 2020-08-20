@@ -1,0 +1,49 @@
+<mvc:View	controllerName="pef.Philomena.controller.User"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.ui.layout.form"
+            xmlns:u="sap.ui.unified"
+			xmlns="sap.m"
+			xmlns:l= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+
+	<VBox class="sapUiMediumMargin">
+        <Label text="Allow cookies" />
+        <CheckBox id="userConsent" selected="{user>/consent}" /> 
+
+        <Label text="First name" />
+        <Input id="userFirstName" value="{user>/firstname}" />
+
+        <Label text="Last name" />
+        <Input id="userName" value="{user>/name}" />
+
+        <Text text="Please see the about section for terms of use and privacy information."/>
+	</VBox>
+
+    <VBox class="sapUiMediumMargin">
+        <Label text="Sharing" />
+        <Text text="This app stores all data locally. If you want to continue on another device, you can share your data by sharing a file or encoded string."/>
+        <Input id="userString" value="" 	placeholder="Press export to generate string..." />
+        <u:FileUploader
+			id="fileUploader"
+            buttonText="Import from file"
+			uploadUrl=""
+			tooltip="Import your user data from local file"
+			change="onUpload"
+			fileType="dat,txt"
+			placeholder="Choose a file for upload...">
+		</u:FileUploader>
+	</VBox>
+
+
+<OverflowToolbar id="otbFooter">
+    <Button id="btnSubmit" type="Accept" icon="sap-icon://hr-approval" text="Submit" press="onSubmit" />
+    <Button id="btnExport" icon="sap-icon://download-from-cloud" text="Export" press="onExport" />
+    <Button id="btnImport" icon="sap-icon://upload-to-cloud" text="Import" press="onImport" />
+    <Button id="btnDownload" icon="sap-icon://attachment-photo" text="Export to file" press="onDownload" />
+</OverflowToolbar>
+	
+</mvc:View>

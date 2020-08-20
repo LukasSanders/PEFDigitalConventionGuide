@@ -1,0 +1,64 @@
+<mvc:View	controllerName="pef.Philomena.controller.Events"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+		<Page showHeader="false">
+		<List 	id="eventList" 
+				items="{path: 'events>/events', sorter: {path: 'begin'}}" 
+				headerText="Events">
+			<headerToolbar>
+				<Toolbar>
+					<SearchField width="50%" search="onFilterTitle"/>
+						<MenuButton text="Select room">
+							<menu>
+								<Menu itemSelected="onRoomSelected">
+								<MenuItem text="All" icon="sap-icon://clear-filter" />
+								<MenuItem text="Panel Room I" />
+								<MenuItem text="Panel Room II" />
+							</Menu>
+						</menu>
+					</MenuButton>
+					<ToggleButton text="Hide past events" enabled="true" pressed="true" press="onHidePast" />
+					<Button icon="sap-icon://clear-filter" press="onClearFilter" />
+				</Toolbar>
+			</headerToolbar>
+			<ObjectListItem title="{events>eventname}"
+							type="Active" 
+							press="onListItemPress">
+						<customData>
+							<core:CustomData key="eventId" value="{events>eventId}"/>
+						</customData>
+
+					<firstStatus>
+						<ObjectStatus
+							text="{	path: 'events>begin', 
+									formatter: 'pef.Philomena.controller.Formatter.eventbeginstatus'}"
+							state="{	path: 'events>begin', 
+									formatter: 'pef.Philomena.controller.Formatter.eventbeginstatusstate'}"
+							icon="{	path: 'events>begin', 
+									formatter: 'pef.Philomena.controller.Formatter.eventbeginstatusicon'}" />
+					</firstStatus>
+				
+					<ObjectAttribute text="{events>room}" />
+					<ObjectAttribute text="{events>description}" />
+					<ObjectAttribute title="Starting" text="{
+						path: 'events>begin', 
+						type: 'sap.ui.model.type.Time',
+						formatOptions: { 
+							source: { pattern: 'yyyy-MM-ddTHH:mm:ss' },
+							pattern: 'HH:mm'
+						}}" />
+					<ObjectAttribute text="{
+						path: 'events>begin', 
+						formatter: 'pef.Philomena.controller.Formatter.eventday'}" />
+
+			</ObjectListItem>
+		</List>	
+		</Page>
+</mvc:View>

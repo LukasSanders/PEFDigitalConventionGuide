@@ -1,0 +1,32 @@
+<mvc:View	controllerName="pef.Philomena.controller.App"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns:m="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+	<!-- Header Shell Bar -->
+	<f:ShellBar
+			id="ShellBar"
+			secondTitle="Convention Guide"
+			homeIcon="./resources/pef_icon_shell.png"
+			showCopilot="false"
+			productSwitcherPressed="fnOpen"
+			showProductSwitcher="true"
+			showNavButton="true"
+			avatarPressed="onAvatarPress"
+			navButtonPressed="onNavButtonPress"
+			homeIconPressed="onHomeIconPress">
+		<f:profile>
+			<f:Avatar initials="{user>/initials}"/>
+		</f:profile>
+	</f:ShellBar>
+
+	<!-- App Content Area -->
+	<m:App id="app">
+	</m:App>
+
+</mvc:View>

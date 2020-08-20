@@ -1,0 +1,43 @@
+<mvc:View	controllerName="pef.Philomena.controller.Overview"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+	
+	
+	<VBox class="sapUiMediumMargin">
+		<Text text="Welcome at GalaCon! This guide helps you to orientate around the venue and manage your schedule."/>
+		<Text text="Use the menu above to navigate."/>
+		<Text text="If you want to save favorite events, please set your user data in the user section."/>
+	</VBox>
+
+	<VBox class="sapUiMediumMargin">
+		<Text text="Attention: This app is currently under development."/>
+	</VBox>
+
+	<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+			<GenericTile
+				backgroundImage="./images/test-image-buffet.jpeg"
+				frameType="TwoByOne" press="pressOnTileOne">
+				<TileContent footer="more...">
+					<NewsContent
+						contentText="This is an ad for some vendor."
+						subheader="Vendor hall, stall 0.55" />
+				</TileContent>
+			</GenericTile>
+			<GenericTile
+				backgroundImage="./images/test-image-event.jpeg"
+				frameType="TwoByOne" press="pressOnTileTwo">
+				<TileContent footer="more...">
+					<NewsContent
+						contentText="This is an ad for some featured panel."
+						subheader="Main Hall, Saturday, 16:00 h " />
+				</TileContent>
+			</GenericTile>
+		</SlideTile>
+	
+</mvc:View>

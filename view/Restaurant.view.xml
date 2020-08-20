@@ -1,0 +1,101 @@
+<mvc:View controllerName="pef.Philomena.controller.Restaurant"
+    xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	height="100%">
+
+	<ObjectPageLayout id="ObjectPageLayout" showAnchorBarPopover="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<heading>
+					<m:Title text="KUBUS Menu"/>
+				</heading>
+
+				<snappedTitleOnMobile>
+					<m:Title text="KUBUS Menu" />
+				</snappedTitleOnMobile>
+
+				<actions>
+					<m:OverflowToolbarButton icon="sap-icon://map-3" type="Emphasized" tooltip="switch to map" press="onToMap"/>
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:Title text="Please see our convention map for restaurant and snack point locations." titleStyle="H6"/>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection title="Menu">
+                <subSections>
+					<ObjectPageSubSection title="Food">
+						<blocks>
+                            <m:List id="foodList"
+                                items="{menu>/food}" >
+
+                                <m:StandardListItem
+                                            title="{menu>name}"
+                                            description="{menu>description}"
+                                            icon="{menu>picurl}"
+                                            iconDensityAware="false"
+                                            iconInset="false"
+                                            info="{menu>price} {menu>currcode}" />
+                            
+                            </m:List>
+                        </blocks>
+			        </ObjectPageSubSection>
+
+			<ObjectPageSubSection title="Snacks">
+                <blocks>
+                    <m:List id="snackList"
+                        items="{menu>/snacks}" >
+
+                        <m:StandardListItem
+                                    title="{menu>name}"
+                                    description="{menu>description}"
+                                    icon="{menu>picurl}"
+                                    iconDensityAware="false"
+                                    iconInset="false"
+                                    info="{menu>price} {menu>currcode}" />
+                    
+                    </m:List>
+                </blocks>
+			</ObjectPageSubSection>
+
+			<ObjectPageSubSection title="Drinks">
+                <blocks>
+                    <m:List id="drinkList"
+                        items="{menu>/drinks}" >
+
+                        <m:StandardListItem
+                                    title="{menu>name}"
+                                    description="{menu>description}"
+                                    icon="{menu>picurl}"
+                                    iconDensityAware="false"
+                                    iconInset="false"
+                                    info="{menu>price} {menu>currcode}" />
+                    
+                    </m:List>
+                </blocks>
+			</ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+
+        <ObjectPageSection title="Information">
+            <subSections>
+                <ObjectPageSubSection title="Allergic ingredients and additives">
+                    <blocks>
+                        <m:Text text="For possibly allergic ingredients and additives please consult the on-site information posts or ask the restaurant staff." />
+                    </blocks>
+                </ObjectPageSubSection>
+                <ObjectPageSubSection title="Current">
+                    <blocks>
+                        <m:Text text="The KUBUS restaurant is closed for renovation. Food will be served outside." />
+                    </blocks>
+                </ObjectPageSubSection>
+            </subSections>
+        </ObjectPageSection>
+		</sections>
+
+	</ObjectPageLayout>
+</mvc:View>

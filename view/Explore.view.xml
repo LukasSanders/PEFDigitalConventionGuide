@@ -1,0 +1,14 @@
+<mvc:View	controllerName="pef.Philomena.controller.Explore"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.f"
+			xmlns="sap.m"
+			xmlns:layout= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+			<VBox id="mapIFrame" class="sapUiMediumMargin"/>
+			<OverflowToolbar id="otbFooter">
+				<Button id="btnExternal" type="Emphasized" icon="sap-icon://action" text="Open in browser" press="onViewExternal" />
+			</OverflowToolbar>
+</mvc:View>
