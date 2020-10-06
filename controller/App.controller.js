@@ -76,6 +76,16 @@ sap.ui.define([
 			};
 		}, 
 		/**********************************************************************************************************************************************************/
+		onFeedbackPress: function (oEvent) {
+			// e-mail body should contain timestamp and current URL 
+			var sUrl = window.location.href;
+			var sTimeStamp = Date();
+			var sBody;
+
+			sBody = "-----\nPage URL: " + sUrl + "\nTimestamp: " + sTimeStamp;
+			sap.m.URLHelper.triggerEmail("support@pony-events.eu", "Digital Convention Guide Feedback", sBody);
+		},
+		/**********************************************************************************************************************************************************/
 		/* POPOVER EVENT HANDLERS */ 
 		/**********************************************************************************************************************************************************/
 		fnChange: function (oEvent) {

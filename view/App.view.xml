@@ -29,4 +29,11 @@
 	<m:App id="app">
 	</m:App>
 
+	<!-- Footer Area -->
+		<m:footer>
+			<m:OverflowToolbar id="otbFooter">
+				<m:ToolbarSpacer/>
+				<m:OverflowToolbarButton text="Feedback" icon="sap-icon://feedback" press="onFeedbackPress"/>
+			</m:OverflowToolbar>
+		</m:footer>
 </mvc:View>
