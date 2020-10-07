@@ -2,11 +2,33 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
+	<!-- SEO DescriptiOptimization -->
+	<meta name="Description" content="Digital convention guide for GalaCon. By Pony Events Federation e.V., Kamen, Germany.">
+	<link rel="canonical" href="https://data.pony-events.eu/webapps/philomena/index.html"/>
+
+	<!-- Mobile Device Optimization -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- PWA manifest -->
+	<link rel="manifest" href="pwa-manifest.json">
+
+	<!-- Add to home screen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="GalaCon Convention Guide">
+	<link rel="apple-touch-icon" href="icons/icon-152x152.png">
+
+	<!-- Windows related -->
+	<meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+	<meta name="msapplication-TileColor" content="#386CC1">
+	<meta name="theme-color" content="#164391">
+
 	<title>Digital Convention Guide</title>
 
+	<!-- OpenUI5 Bootstrap -->
 	<script id="sap-ui-bootstrap"
-		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
 		data-sap-ui-theme="sap_fiori_3"
 		data-sap-ui-resourceroots='{"pef.Philomena": "./" }'
 		data-sap-ui-compatVersion="edge"
@@ -17,26 +39,49 @@
 		data-sap-ui-preload="">
 	</script>
 
-<script>
-	sap.ui.getCore().attachInit(function() {
+	<!-- OpenUI5 App Loader -->
+	<script>
+		sap.ui.getCore().attachInit(function() {
+				
+			// build Shell control to hold the app 
+			new sap.m.Shell({
+				app: new sap.ui.core.ComponentContainer({
+
+					// fullscreen app 
+					height: "100%", 
+
+					// namespace 
+					name: 	"pef.Philomena"
+				})
 			
-		// build Shell control to hold the app 
-		new sap.m.Shell({
-			app: new sap.ui.core.ComponentContainer({
+			// place Shell control at content 
+			}).placeAt("content");
+		});
+	</script>
 
-				// fullscreen app 
-				height: "100%", 
+	<!-- Register service worker -->
+	<script src="register-worker.js"></script>
 
-				// namespace 
-				name: 	"pef.Philomena"
-			})
-		
-		// place Shell control at content 
-		}).placeAt("content");
-	});
-</script>
+	<style>
+		body {
+			background: #354a5f;
+		}
+		#splash-screen {
+			background-color:#354a5f;
+			color: white;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 </head>
 
-<body class="sapUiBody" id="content">
+<!-- Body area to be filled by OpenUI5 -->
+<body class="sapUiBody"id="content" style="background-color: #354a5f;">
+	<div id="splash-screen">
+		<h1>GalaCon Convention Guide</h1>
+		<img src="resources/pef_icon_shell.png" alt="Convention Guide Logo">
+		<p>by Pony Events Federation</p>
+	</div>
 </body>
 </html>
