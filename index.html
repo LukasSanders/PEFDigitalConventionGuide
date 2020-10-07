@@ -2,9 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
+
+	<!-- Mobile Device Optimization -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Digital Convention Guide</title>
 
+	<!-- OpenUI5 Bootstrap -->
 	<script id="sap-ui-bootstrap"
 		src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
 		data-sap-ui-theme="sap_fiori_3"
@@ -17,26 +21,28 @@
 		data-sap-ui-preload="">
 	</script>
 
-<script>
-	sap.ui.getCore().attachInit(function() {
+	<!-- OpenUI5 App Loader -->
+	<script>
+		sap.ui.getCore().attachInit(function() {
+				
+			// build Shell control to hold the app 
+			new sap.m.Shell({
+				app: new sap.ui.core.ComponentContainer({
+
+					// fullscreen app 
+					height: "100%", 
+
+					// namespace 
+					name: 	"pef.Philomena"
+				})
 			
-		// build Shell control to hold the app 
-		new sap.m.Shell({
-			app: new sap.ui.core.ComponentContainer({
-
-				// fullscreen app 
-				height: "100%", 
-
-				// namespace 
-				name: 	"pef.Philomena"
-			})
-		
-		// place Shell control at content 
-		}).placeAt("content");
-	});
-</script>
+			// place Shell control at content 
+			}).placeAt("content");
+		});
+	</script>
 </head>
 
-<body class="sapUiBody" id="content">
+<!-- Body area to be filled by OpenUI5 -->
+<body class="sapUiBody"id="content">
 </body>
 </html>
