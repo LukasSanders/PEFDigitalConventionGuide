@@ -2,6 +2,8 @@
 
 Digital convention guide for GalaCon (www.galacon.eu) built mainly on SAP OpenUI5 and Leaflet.js. The application is currently still under development and should be extended to a PWA in it's final state. 
 
+Demo: https://data.pony-events.eu/webapps/philomena/index.html 
+
 ## Features 
 
 ### Venue Map 
@@ -70,7 +72,7 @@ The app is currently in an early state of development. It lacks PWA and push not
 
 We would like to include the following features before moving to beta testing: 
 
-- PWA functionality 
+- Full PWA functionality with offline compatibility 
 - Push notifications for upcoming favorite events 
 - Backend (get data from actual database) 
 - Functionality for on-site screens 
