@@ -163,6 +163,7 @@ sap.ui.define([
 
 				// TODO must be offline for PWA 
 				sHtmlContent = `<iframe height="400px" width="100%" src="https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chld=L|0&chs=200x200&chl=${sTicketNo}" frameborder="no scrolling="no"></iframe>`;
+
 			}
 
 			// get html container control 
