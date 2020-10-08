@@ -129,7 +129,9 @@ sap.ui.define([
 			if (sTicketNo == "") {
 				sHtmlContent = `<span style="font-family: Verdana, Geneva, sans-serif">No ticket number found</span>`;
 			} else {
-				sHtmlContent = `<iframe height="400px" width="100%" src="https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chld=L|0&chs=400x400&chl=${sTicketNo}" frameborder="no scrolling="no"></iframe>`;
+
+				// TODO must be offline for PWA 
+				sHtmlContent = `<iframe height="400px" width="100%" src="https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chld=L|0&chs=200x200&chl=${sTicketNo}" frameborder="no scrolling="no"></iframe>`;
 			}
 
 			// get html container control 
