@@ -1,0 +1,29 @@
+<mvc:View	controllerName="pef.Philomena.controller.Ticket"
+			xmlns:mvc="sap.ui.core.mvc"
+			xmlns:f="sap.ui.layout.form"
+            xmlns:u="sap.ui.unified"
+			xmlns="sap.m"
+			xmlns:l= "sap.ui.layout"
+			xmlns:core="sap.ui.core"
+			xmlns:html="http://www.w3.org/1999/html"
+			height="100%"
+			displayBlock="true">
+
+    <VBox class="sapUiMediumMargin">
+        <Label text="Ticket" />
+        <Text text="You can import your convention ticket here by scanning the QR code on your e-ticket. This QR code is valid for entry."/>
+        <Text text="Please note that random identity checks may be performed upon entry, so make sure to bring a valid ID."/>
+
+        <Label text="Ticket Code" />
+        <Input id="ticketCode" value="{ticket>/ticketno}" enabled="true" editable="false"/>
+	</VBox>
+    
+    <VBox width="80%" id="camContainer" alignItems="Center" />
+    <VBox id="qrContainer" alignItems="Center" class="sapUiMediumMargin" />
+
+<OverflowToolbar id="otbFooter">
+    <Button id="btnImport" icon="sap-icon://add-photo" text="Scan" press="onImport" />
+    <Button id="btnShow" icon="sap-icon://bar-code" text="Show" press="onShow" />
+</OverflowToolbar>
+
+</mvc:View>

@@ -78,6 +78,12 @@
 			"targetSrc": "App"
 		},
 		{
+			"src": "sap-icon://bar-code",
+			"title": "My Ticket",
+			"target": "ticket",
+			"targetSrc": "App"
+		},
+		{
 			"src": "sap-icon://hint",
 			"title": "General Information",
 			"target": "general",

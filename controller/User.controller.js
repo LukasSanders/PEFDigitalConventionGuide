@@ -225,8 +225,8 @@ sap.ui.define([
 				MessageToast.show("User data imported!");
 
 				// also update the local client model by receiving data from the cookies again - this also handles converting favorite events to an array again 
-				var oNewData = this.getModelHandler().createUserModel().getData();
-				this.getOwnerComponent().getModel("user").setData(oNewData);
+				var oNewData = this.getModelHandler().createTicketModel().getData();
+				this.getOwnerComponent().getModel("ticket").setData(oNewData);
 
 			// if consent was not given, display an error message 
 			} else {
