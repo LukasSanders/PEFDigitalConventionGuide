@@ -101,8 +101,13 @@ sap.ui.define([
 
 			// save imported ticket code in cookies and model 
 
-			// check if code is valid 
-			// TODO 
+			// check if code is valid - must be a 18 digit number starting with 1 - 9 
+			var sRegex = /[1-9]{1}[0-9]{17}/i;
+
+			if (!sData.match(sRegex)) {
+				MessageBox.error("Invalid ticket number. Make sure to scan the correct code!");
+				return;
+			}
 
 			// if consent was given, set the imported values to cookies 
 			if (this.getCookieHandler().checkConsent()) {
@@ -116,7 +121,33 @@ sap.ui.define([
 
 			// if consent was not given, display an error message 
 			} else {
-				MessageBox.error("Ticket data cannot be saved if cookies are not allowed.");
+
+				MessageBox.error("Ticket data cannot be saved if cookies are not allowed.", {
+					actions: ["Allow cookies", MessageBox.Action.CLOSE],
+					emphasizedAction: "Allow cookies",
+					onClose: function (sAction) {
+
+						
+						if (sAction == "Allow cookies") {
+
+							// grant cookie consent 
+							this.getCookieHandler().setConsentCookie(true);
+
+							// save data in cookie 
+							this.getCookieHandler().setValue(this.getCookieHandler().getFullHandle() + "_TICKETCODE", sData);
+							MessageToast.show("Data saved!");
+
+							// update QR code display 
+							this._setQrCode();
+
+						} else {
+
+							MessageToast.show("Action canceled!");
+
+						}
+
+					}
+				});
 			}
 		},
 		/**********************************************************************************************************************************************************/
