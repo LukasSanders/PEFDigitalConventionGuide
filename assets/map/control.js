@@ -155,7 +155,7 @@ var polyKaraoke = L.polygon([
 [385.25, 659],
 [346, 682.75],
 [335.75, 639.75]
-], { color: 'yellow', fillColor: '#FFFF00' } ).bindPopup('<b>Karaoke Room</b>br>').addTo(groupRoom);
+], { color: 'yellow', fillColor: '#FFFF00' } ).bindPopup('<b>Karaoke Room</b><br>').addTo(groupRoom);
 
 var polyWorkshop = L.polygon([
 [346, 682.75],
