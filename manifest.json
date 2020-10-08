@@ -104,6 +104,11 @@
 					"target": 	"user"
 				},
 				{
+					"pattern": 	"ticket", 
+					"name": 	"ticket", 
+					"target": 	"ticket"
+				},
+				{
 					"pattern": 	"myevents", 
 					"name": 	"myevents", 
 					"target": 	"myevents"
@@ -183,6 +188,10 @@
 					},
 				"user": {
 						"viewName": "User", 
+						"viewLevel": 1
+					},
+				"ticket": {
+						"viewName": "Ticket", 
 						"viewLevel": 1
 					},
 				"restaurant": {
