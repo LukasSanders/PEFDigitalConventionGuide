@@ -1,8 +1,8 @@
+**Project retired!** After evaluation at GalaCon 2022, we have decided to use a different approach for the Digital Convention Guide. The project files will still be available for you, but the public demo is no longer reachable. Thanks to all supporters and testers!
+
 # Pony Events Federation - DigitalConventionGuide
 
 Digital convention guide for GalaCon (www.galacon.eu) built mainly on SAP OpenUI5 and Leaflet.js. The application is currently still under development and should be extended to a PWA in it's final state. 
-
-Demo: https://data.pony-events.eu/webapps/philomena/index.html 
 
 ## Features 
 
